@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Syntax King | Media Downloader</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">SK</span>
+            <span>SYNTAX<span class="accent">KING</span></span>
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            MEDIA TOOL
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+
+            <div class="badge">
+                YOUR MEDIA TOOLKIT
+            </div>
+
+            <h1>
+                Save your favorite<br>
+                <span class="gradient-text">media in one place.</span>
+            </h1>
+
+            <p class="description">
+                Paste a supported media link to check its availability
+                and access an authorized download.
+            </p>
+
+        </section>
+
+        <section class="downloader-card">
+
+            <div class="card-heading">
+                <div>
+                    <h2>Media Downloader</h2>
+                    <p>Paste a link to get started.</p>
+                </div>
+
+                <div class="card-icon">↓</div>
+            </div>
+
+            <form id="downloadForm">
+
+                <label for="mediaUrl">MEDIA URL</label>
+
+                <div class="input-wrapper">
+
+                    <input
+                        type="url"
+                        id="mediaUrl"
+                        placeholder="https://www.youtube.com/watch?v=..."
+                        required
+                        autocomplete="url"
+                    >
+
+                    <button
+                        type="button"
+                        id="pasteButton"
+                        class="paste-button"
+                    >
+                        Paste
+                    </button>
+
+                </div>
+
+                <div class="platforms">
+
+                    <button type="button" class="platform"
+                        data-platform="youtube">
+                        <span class="platform-icon youtube">▶</span>
+                        YouTube
+                    </button>
+
+                    <button type="button" class="platform"
+                        data-platform="instagram">
+                        <span class="platform-icon instagram">◎</span>
+                        Instagram
+                    </button>
+
+                    <button type="button" class="platform"
+                        data-platform="facebook">
+                        <span class="platform-icon facebook">f</span>
+                        Facebook
+                    </button>
+
+                    <button type="button" class="platform"
+                        data-platform="tiktok">
+                        <span class="platform-icon tiktok">♪</span>
+                        TikTok
+                    </button>
+
+                </div>
+
+                <button type="submit" id="downloadButton">
+                    <span id="buttonText">Check & Download</span>
+                    <span>→</span>
+                </button>
+
+            </form>
+
+            <div id="result" class="result hidden" role="status"
+                aria-live="polite">
+            </div>
+
+            <div class="notice">
+                <span>ⓘ</span>
+                Only download media you own or are authorized to save.
+            </div>
+
+        </section>
+
+        <section class="features">
+
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <h3>Simple</h3>
+                <p>Paste a link and let the server check it.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🔗</div>
+                <h3>Multi-platform</h3>
+                <p>Recognizes four major social platforms.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🛡</div>
+                <h3>Safer by design</h3>
+                <p>Validates links and restricts downloads to supported hosts.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Syntax King · Built for authorized media downloads.</p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
